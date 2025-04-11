@@ -1,0 +1,857 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----HEADER----*/
+
+
+
+header{
+    background-color: #d0d0d0;
+    padding: 30px 20px;
+    height: 140px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header img{
+    height: 50px;
+    width: auto;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-center {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    list-style: none;
+    gap: 70px;
+}
+
+.nav-center li{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: large;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-right ul{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right li{
+    list-style: none;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: small;
+    cursor: pointer;
+}
+
+.nav-right li:hover,
+.nav-center li a:hover{
+    color: #555
+}
+
+/*----ORDER, RETURNS, GUARANTEE----*/
+
+.below-header{
+    background-color: #910404;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.below-header ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.below-header li{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: small;
+}
+
+.hero-section{
+    position: relative;
+    height: 650px;
+    background-image: url(./imgs/home_background.webp);
+    background-size: cover;
+    background-position: absolute;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.hero-content h2{
+    margin: 0;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000;
+    font-family: "Archivo Black", sans-serif;
+}
+
+
+/*----HOMEPAGE SHOP LINKS----*/
+
+
+.shop-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.shop-item{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-align: center;
+}
+
+.shop-item a{
+    text-decoration: none;
+    color: #000;
+}
+.shop-item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.shop-item:hover img{
+    transform: scale(1.05);
+}
+
+.shop-item h3{
+    padding: 5px 10px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.shop-item:hover h3{
+    color:#c51505
+}
+
+
+/*----BEST OF IMAGE GALLARY ON HOMEPAGE----*/
+
+    .best-of {
+        padding: 40px;
+    }
+    
+    .best-of h4 {
+        font-family: "Work Sans", sans-serif;
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .best-of-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) auto;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .best-of-images:hover h5{
+        transform: scale(1.20);
+        color: #c51505
+    }
+    
+    .best-of-images img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    }
+    
+    .see-more {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .see-more h5 {
+        font-family: "Work Sans", sans-serif;
+        margin: 0;
+    }
+    
+    .see-more span {
+        font-size: 2rem;
+    }
+    
+    /*----FOOTER----*/
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        background-color: #d0d0d0;
+    }
+
+    .footer h6{
+        font-family: "Work Sans", sans-serif;
+        font-size: 1.0rem;
+        font-weight: 500;
+    }
+
+    .footer p{
+        font-family: "Work Sans", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    .footer li{
+        font-family: "Work Sans", sans-serif;
+        font-size: 0.7rem;
+        font-weight: 300;
+        list-style: none;
+    }
+    
+    .footer-section {
+        flex: 1;
+        padding: 0 10px;
+    }
+    
+    .footer img {
+        height: 50px;
+        width: auto;
+        margin-right: 20px;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding: 10px;
+        background-color: #d0d0d0;
+    }
+
+    .footer-bottom p {
+        font-family: "Work Sans", sans-serif;
+        font-size: 0.6rem;
+        font-weight: 400;
+    }
+    
+    .socials {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+        color: #000;
+    }
+
+    .socials img{
+        width: 30px;
+        height: 30px;
+    }
+
+
+    /*----SNOWBOARD SHOP PAGE----*/
+
+    .product-pages a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .DOA-header{
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        overflow: hidden;
+    }
+
+    .DOA-header img{
+        width: 100vw;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .shop-title{
+        font-family: "Work Sans", sans-serif;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .product-pages {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .product-pages div {
+        text-align: center;
+    }
+    
+    .product-pages img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-pages img:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .product-pages h3 {
+        font-size: 1rem;
+        font-family: "Work Sans", sans-serif;
+        margin: 10px 0 5px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .product-pages p {
+        font-size: 0.9rem;
+        font-family: "Work Sans", sans-serif;
+        color: #555;
+    }
+
+
+    /*----SUPER D.O.A PRODUCT PAGE----*/
+
+
+.board-image img{
+    width: 50%;
+    height: auto;
+    position: relative;
+    top: 20px;
+}
+
+.product-info{
+    position: absolute;
+    top: 100%;
+    left: 60%;
+}
+
+/*Product section*/
+.product {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+}
+
+/*Product type (smaller text at the top)*/
+.product-type {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/*Product title*/
+.product-title {
+    font-size: 65px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/*Price*/
+.price {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/*Payment Installments*/
+.payment-plan {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/*Size options*/
+.size-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.size {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.size:hover {
+    background-color: #ddd;
+}
+
+/*Find my size link*/
+.find-size a {
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+.find-size a:hover {
+    text-decoration: underline;
+}
+
+/*Add to cart button*/
+.add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    background: none;
+    border: 2px solid #e74c3c;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/*Shipping info*/
+.free-shipping {
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+    color: #666;
+}
+
+
+.detailed-product-description{
+    margin: 20px;
+    border: #000 solid 2px;
+    border-radius: 20px;
+    height: 2000px;
+}
+
+.product-specs{
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+.product-specs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.spec-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    font-size: 24px;
+    color: #4e4f4e;
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+}
+
+.type{
+   font-size: 28px;
+   font-family: "Lovelo Black";
+   src: url('fonts/Lovelo-Black.ttf'); 
+}
+
+.flex-scale img{
+    width: 40%;
+    height: auto;
+    position: relative;
+    bottom: 20px;
+}
+
+.skill-chart img{
+    width: 40%;
+    height: auto;
+    position: relative;
+    top: 150px;
+    left: 20px;
+}
+
+.tech-story{
+    width: 40%;
+    height: auto;
+    position: relative;
+    left: 58%;
+    bottom: 870px;
+}
+
+.section-title{
+    font-size: 24px;
+    color: #4e4f4e;
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+}
+
+.product-name{
+    font-size: 28px;
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+}
+
+.tech-story p{
+    font-size: 18px;
+    font-family: "Work Sans", sans-serif;
+    color: #4e4f4e;
+}
+
+.camber-section{
+    width: 40%;
+    height: auto;
+    position: relative;
+    left: 58%;
+    bottom: 800px;
+}
+
+.camber-section p{
+    font-size: 18px;
+    font-family: "Work Sans", sans-serif;
+    color: #4e4f4e;
+}
+
+.camber-diagram img{
+    width: 45%;
+    height: auto;
+    position: relative;
+    left: 54%;
+    bottom: 690px;
+}
+
+.video-section{
+    position: relative;
+    top: -500px;
+}
+
+.youtube-video iframe{
+    width: 90%;
+    height: 700px;
+    position: relative;
+    left: 75px;
+}
+
+/*----BIRDS OF A FEATHER SHOP PAGE----*/
+
+.boaf-header{
+    text-align: center;
+}
+
+.boaf-header img{
+   max-width: 100%;
+}
+
+.boaf-header h1{
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+    font-size: 70px;
+    color: #ffffff;
+    position: relative;
+    bottom: 400px;
+}
+
+
+.boaf-product-info{
+    position: absolute;
+    top: 110%;
+    left: 60%;
+}
+
+.boaf-video-section{
+    position: relative;
+    top: -300px;
+}
+
+.boaf-youtube-video iframe{
+    width: 90%;
+    height: 700px;
+    position: relative;
+    bottom: 500px;
+    left: 75px;
+}
+
+/*----CONTACT US PAGE----*/
+
+.contact-us-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-us-title h1{
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+    font-size: 60px;
+    color: black;
+}
+
+.contact-us-title h2{
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.contact-form, .details-section{
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    padding: 20px;
+}
+
+.contact-form .form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form button {
+    background-color: #111;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 10px auto 0 auto;
+    margin-top: 10px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #444;
+  }
+  
+
+.contact-form h3{
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #333;
+  background-color: white;
+}
+
+.details-section {
+    padding-left: 250px;
+    font-family: "Work Sans", sans-serif;
+    
+  }
+  
+  .details-section h4 {
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    letter-spacing: 1px;
+  }
+  
+  .details-section p {
+    font-size: 16px;
+    margin: 2px 0 10px;
+  }
+
+  .gradient-background{
+    background: linear-gradient(to right, #999, #eee);
+    color: #111;
+    padding: 40px;
+  }
+  
+
+
+  /**----ABOUT US PAGE----**/
+
+
+  .about-page {
+    padding: 40px;
+    font-family: "Work Sans", sans-serif;
+    color: #111;
+  }
+  
+  .about-page .about-us-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-page .about-us-title h1 {
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .about-page .about-us-title h2 {
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .about-us-p1 p{
+    display: grid;
+    grid-template-columns: auto;
+    width: 500px;
+    margin-bottom: 1.5em;
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+
+  }
+
+  .about-us-p1 img{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: 800px;
+    top: 300px;
+  }
+
+.about-us-p2 h3{
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-us-p2 ul{
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+}
+
+  .about-us-p2 p{
+    display: grid;
+    grid-template-columns: auto;
+    width: 500px;
+    margin-top: 1.5em;
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .about-us-p2 img{
+    width: 40%;
+    height: 375px;
+    position: absolute;
+    left: 800px;
+    top: 700px;
+  }
+
+  /*----SERVICES PRODUCT PAGE----*/
+
+  .services-title{
+    font-family: "Lovelo Black";
+    src: url('fonts/Lovelo-Black.ttf');
+    text-align: center;
+    position: relative;
+    top: 50px;
+  }
+
+  .bundles{
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    width: 400px;
+  }
+
+  .services .bundles ul{
+    margin-top: 20px;
+    list-style-type: disc;
+    color: #333;
+    line-height: 1.6;
+ }
+
+ .services .bundles ul li::after{
+    content: "\2714";
+    color: green;
+ }
+
+
+  .services{
+    position: relative;
+    top: 100px;
+    left: 200px;
+  }
+
+  .full-tune{
+    position: relative;
+    bottom: 125px;
+    left: 800px;
+    font-family: "Work Sans", sans-serif;
+    width: 500px;
+  }
+
+  
